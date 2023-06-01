@@ -1,17 +1,6 @@
 <script>
   let newItem = "";
   let todoList = [];
-  import Icon from "../../../../components/Icon.svelte";
-
-  function remove(index) {
-    todoList.splice(index, 1);
-    todoList = todoList;
-  }
-
-  function complete(index) {
-    todoList[index].completed = !todoList[index].completed;
-  }
-
   function add() {
     if (newItem !== "") {
       todoList = [
@@ -24,6 +13,18 @@
       newItem = "";
     }
   }
+  import Icon from "../../../../components/Icon.svelte";
+
+  function remove(index) {
+    todoList.splice(index, 1);
+    todoList = todoList;
+  }
+
+  function complete(index) {
+    todoList[index].completed = !todoList[index].completed;
+  }
+
+  
 </script>
 
 <main>
