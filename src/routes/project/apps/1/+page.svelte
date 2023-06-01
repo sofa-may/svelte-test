@@ -44,7 +44,6 @@ function add() {
     </div>
     {/each}
   </div>
-
 </form>
 
 </main>
